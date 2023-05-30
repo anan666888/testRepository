@@ -5,7 +5,7 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--处理器映射器-->
     <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
-    <!--处理器映射器-->
+    <!--处理器适配器-->
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
     <!--视图解析器：模板引擎：Thymeleaf Freemarker-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
