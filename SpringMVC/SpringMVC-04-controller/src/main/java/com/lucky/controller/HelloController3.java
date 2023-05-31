@@ -23,7 +23,7 @@ public class HelloController3 {
         return "test";
     }
 
-    @RequestMapping(value = "/restfulMethod2",method = RequestMethod.GET)
+    @RequestMapping(value = "/restfulMethod3",method = RequestMethod.GET)
     public String restfulMethod3(Model model){
         String res = "restfulMethod2属性指定请求类型";
         model.addAttribute("msg",res);
