@@ -4,7 +4,9 @@
     <title>Title</title>
 </head>
 <body>
-${msg}
-<p>测试页面test1</p>
+  <form action="/encodingTest" method="post">
+    <input type="text" name="name">
+    <input type="submit">
+  </form>
 </body>
 </html>

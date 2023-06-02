@@ -5,6 +5,6 @@
 </head>
 <body>
 ${msg}
-<p>测试页面test1</p>
+<p>测试页面test2</p>
 </body>
 </html>
