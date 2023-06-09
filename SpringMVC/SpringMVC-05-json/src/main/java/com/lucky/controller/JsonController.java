@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-
+//该注解会经过视图解析器
+//@Controller
+//该注解会直接返回一个字符串
 @RestController
 public class JsonController {
     /**@ResponseBody的作用:
