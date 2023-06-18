@@ -37,4 +37,5 @@ public class AjaxContrller {
         list.add(new User(2,"赵六",14,"男"));
         return list;//由于该类使用@RestController注解，所以list会转换成json类型传给前端
     }
+
 }
