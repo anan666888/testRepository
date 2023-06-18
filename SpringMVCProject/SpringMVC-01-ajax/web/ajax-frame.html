@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iframe测试页面无刷新加载</title>
+  <script>
+    function go(){
+      var url = document.getElementById("url").value;
+      document.getElementById("iframe1").src = url;
+    }
+  </script>
+</head>
+<body>
+<!--  输入框-->
+  <div style="border: 2px">
+    <input type="text" id="url">
+    <input type="button" value="提交" onclick="go()">
+  </div>
+<!--iframe框：src="http://localhost:8080/ajax/test1" -->
+  <div>
+    <iframe id="iframe1"  frameborder="2px" style="width: 100%; height: 500px"></iframe>
+  </div>
+
+</body>
+</html>
