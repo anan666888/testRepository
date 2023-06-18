@@ -5,17 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lucky</groupId>
-    <artifactId>SpringMVC</artifactId>
+    <artifactId>SpringMVCProject</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>SpringMVC-01-servlet</module>
-        <module>SpringMVC-02-hellomvc</module>
-        <module>SpringMVC-03-annotationmvc</module>
-        <module>SpringMVC-04-controller</module>
-        <module>SpringMVC-05-json</module>
-        <module>SpringMVC-06-bookssm</module>
-        <module>SpringMVC-06-ajax</module>
+        <module>SpringMVC-01-ajax</module>
     </modules>
 
     <properties>
@@ -66,6 +60,4 @@
             <version>2.6.4</version>
         </dependency>
     </dependencies>
-
-
 </project>
