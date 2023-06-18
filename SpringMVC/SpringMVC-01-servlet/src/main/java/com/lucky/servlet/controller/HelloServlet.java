@@ -1,4 +1,4 @@
-package com.lucky.servlet;
+package com.lucky.servlet.controller;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
