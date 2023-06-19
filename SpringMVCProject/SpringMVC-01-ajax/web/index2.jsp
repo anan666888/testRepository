@@ -4,7 +4,6 @@
     <title>Title</title>
     <script src="${pageContext.request.contextPath}/statics/js/jquery-3.4.1.js"></script>
     <script>
-
         $(function () {
             $("#btn").click(function (){
                 $.post("${pageContext.request.contextPath}/test3",function (data) {
@@ -18,6 +17,7 @@
                                 "<td>"+data[i].id+"</td>" +
                             "</tr>"
                     }
+                    $("#content").html(html);
                 })
             })
         })
@@ -34,7 +34,5 @@
         </tr>
         <tbody id="content"></tbody>
     </table>
-
-    <script></script>
 </body>
 </html>
