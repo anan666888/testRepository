@@ -38,4 +38,23 @@ public class AjaxContrller {
         return list;//由于该类使用@RestController注解，所以list会转换成json类型传给前端
     }
 
+    @RequestMapping("/test4")
+    public String test4(String name,String pwd){
+        String msg = "";
+        if (name != null){
+            if ("admin".equals(name)) {
+                msg = "OK";
+            }else{
+                msg = "用户名有误";
+            }
+        }
+        if (pwd != null) {
+            if ("123456".equals(pwd)){
+                msg = "OK";
+            }else{
+                msg = "密码有误";
+            }
+        }
+        return msg;
+    }
 }
