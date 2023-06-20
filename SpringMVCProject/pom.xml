@@ -12,6 +12,7 @@
         <module>SpringMVC-01-ajax</module>
         <module>SpringMVC-02-interceptor</module>
         <module>SpringMVC-03-Interceptor</module>
+        <module>SpringMVC-04-file</module>
     </modules>
 
 

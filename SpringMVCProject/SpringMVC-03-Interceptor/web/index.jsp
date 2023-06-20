@@ -5,6 +5,6 @@
   </head>
   <body>
   <a href="${pageContext.request.contextPath}/user/jumpLogin">登录</a>
-  <a href="${pageContext.request.contextPath}/user/jumpSuccess">登录成功页面</a>
+  <a href="${pageContext.request.contextPath}/user/jumpSuccess">主页面</a>
   </body>
 </html>
