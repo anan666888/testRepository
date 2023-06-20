@@ -12,8 +12,8 @@
     <artifactId>SpringMVC-06-bookssm</artifactId>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
 <!--    添加依赖：junit、数据库连接java驱动、数据库连接池、servlet jsp、Mybatis、Spring-->
