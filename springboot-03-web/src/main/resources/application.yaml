@@ -1,0 +1,33 @@
+person:
+  name: liwanyu
+  age: 12
+  happy: false
+  birth: 1998/04/18
+  maps: {k1: v1,k2: v2}
+  lists:
+    - cat
+    - pig
+    - dog
+  dog:
+    name: 旺财
+    age: 1
+
+
+person1:
+  name: liwanyu001${random.uuid}
+  age: ${random.int} #随机int
+  happy: true
+  birth: 1999/04/18
+  maps: {k1: v1,k2: v2}
+  lists:
+    - cat
+    - pig
+    - dog
+  dog:
+    name: ${person.hello:other}_旺财
+    age: 1
+
+user1:
+  last-name: li
+  age: 12
+  sex: 女
