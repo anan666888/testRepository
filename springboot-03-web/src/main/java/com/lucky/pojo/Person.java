@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 
 import javax.validation.constraints.Email;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -22,9 +24,12 @@ import java.util.Map;
 @Validated
 public class Person {
 //    @Value("${name}")
-    @Email(message = "邮箱格式有误！")
+//    @NotNull(message = "名字不能为空")
     private String name;
+//    @Max(value = 120,message = "年龄最大不超过120")
     private Integer age;
+//    @Email(message = "邮箱格式错误")
+    private String email;
     private Boolean happy;
     private Date birth;
     private Map<String,Object> maps;
@@ -34,14 +39,23 @@ public class Person {
     public Person() {
     }
 
-    public Person(String name, Integer age, Boolean happy, Date birth, Map<String, Object> maps, List<Object> lists, Dog dog) {
+    public Person(String name, Integer age, String email, Boolean happy, Date birth, Map<String, Object> maps, List<Object> lists, Dog dog) {
         this.name = name;
         this.age = age;
+        this.email = email;
         this.happy = happy;
         this.birth = birth;
         this.maps = maps;
         this.lists = lists;
         this.dog = dog;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getName() {
@@ -105,6 +119,7 @@ public class Person {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", email='" + email + '\'' +
                 ", happy=" + happy +
                 ", birth=" + birth +
                 ", maps=" + maps +
