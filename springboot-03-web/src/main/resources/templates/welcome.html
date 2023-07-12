@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+欢迎进入首页
+<div th:text="${msg}"></div>
+<div th:utext="${msg}"></div>
+
+<div th:each="user:${userList}" th:text="${user}"></div>
+</body>
+</html>
